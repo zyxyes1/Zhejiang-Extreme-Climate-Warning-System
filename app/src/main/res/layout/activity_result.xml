@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 内容区域 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4sp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btn_measures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="极端天气防范措施"
+                android:textAllCaps="false"
+                android:backgroundTint="#FF5722"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="16dp"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/temperatureChart"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 悬浮返回按钮 -->
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textAllCaps="false"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:elevation="8dp"/>
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:lineSpacingExtra="4sp"
+        android:layout_marginBottom="16dp"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_measures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="极端天气防范措施"
+        android:textAllCaps="false"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>

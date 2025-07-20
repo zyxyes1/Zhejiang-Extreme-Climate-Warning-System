@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="极端气候预警系统"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市："
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"/>
+
+        <Spinner
+            android:id="@+id/citySpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="区县："
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"/>
+
+        <Spinner
+            android:id="@+id/districtSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"/>
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/dp_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 开始预测按钮 -->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始预测"
+        android:textAllCaps="false"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- AI预测按钮 -->
+    <Button
+        android:id="@+id/btn_ai_predict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AI预测"
+        android:textAllCaps="false"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- 迭代优化预测按钮 -->
+    <Button
+        android:id="@+id/btn_iterative_optimize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="迭代优化预测"
+        android:textAllCaps="false"
+        android:backgroundTint="#9C27B0"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- 算法说明按钮 -->
+    <Button
+        android:id="@+id/btn_algorithm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="算法说明"
+        android:textAllCaps="false"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="符冠富课题组\n  合作电话:13738014475 E-mail:fuguanfu@caas.cn \n中国水稻研究所 稻作逆境与调控课题组 出品"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
